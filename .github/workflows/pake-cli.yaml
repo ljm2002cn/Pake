@@ -5,7 +5,7 @@ on:
       platform:
         description: 'platform'
         required: true
-        default: 'macos-latest'
+        default: 'windows-latest'
         type: choice
         options:
           - 'windows-latest'
@@ -137,7 +137,7 @@ jobs:
       - name: Upload archive
         uses: actions/upload-artifact@v3
         with:
-          name: output-${{ inputs.platform }}.zip
+          name: ${{ inputs.name }}-${{ inputs.platform }}.zip
           path: node_modules/pake-cli/output/*
           retention-days: 3
 
