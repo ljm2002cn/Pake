@@ -1,4 +1,4 @@
-name: ${{ inputs.name }}-${{ inputs.platform }}
+name: build APP online
 on:
   workflow_dispatch:
     inputs:
