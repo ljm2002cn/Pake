@@ -5,7 +5,7 @@ on:
       platform:
         description: 'platform'
         required: true
-        default: 'macos-latest'
+        default: 'windows-latest'
         type: choice
         options:
           - 'windows-latest'
@@ -23,11 +23,11 @@ on:
       width:
         description: '[Width, Optional]'
         required: false
-        default: '1200'
+        default: '0'
       height:
         description: '[Height, Optional]'
         required: false
-        default: '780'
+        default: '0'
       safe_domain:
         description: '[Safe Domain, Optional]'
         required: false
@@ -53,7 +53,7 @@ on:
 
 jobs:
   build:
-    name: ${{ inputs.platform }}
+    name: ${{ inputs.name }}
     runs-on: ${{ inputs.platform }}
     strategy:
       fail-fast: false
