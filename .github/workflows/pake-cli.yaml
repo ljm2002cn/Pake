@@ -1,4 +1,4 @@
-name: Build App With Pake CLI
+name: ${{ inputs.name }}-${{ inputs.platform }}
 on:
   workflow_dispatch:
     inputs:
