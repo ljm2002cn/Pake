@@ -48,7 +48,7 @@ export default async function handleOptions(options: PakeCliOptions, url: string
 
   const appOptions: PakeAppOptions = {
     ...options,
-    'test',
+    name,
     identifier: getIdentifier(url),
   };
 
