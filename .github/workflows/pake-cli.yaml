@@ -1,4 +1,4 @@
-name: build APP online
+name: 
 on:
   workflow_dispatch:
     inputs:
