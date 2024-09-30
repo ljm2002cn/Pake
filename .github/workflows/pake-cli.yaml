@@ -53,7 +53,7 @@ on:
 
 jobs:
   build:
-    name: ${{ inputs.platform }}
+    name: ${{ inputs.name }}-${{ inputs.platform }}
     runs-on: ${{ inputs.platform }}
     strategy:
       fail-fast: false
